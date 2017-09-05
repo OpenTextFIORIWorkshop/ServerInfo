@@ -15,6 +15,6 @@ Install [Docker for Windows](https://docs.docker.com/docker-for-windows/) switch
 ## Development
 
 ```
-$ ./build.ps1
-$ docker run --name server-info server-info
+> ./build.ps1
+> docker run server-info
 ```
