@@ -7,8 +7,12 @@ $build = $msbuild + " $apiproj " + $options
 Invoke-Expression $build
 
 # Docker Build
-$tag = "server-info"
+$tag = "jpoon/server-info"
 $siteroot = ".\ServerInfo\bin\Release\PublishOutput"
 $siteroot
 $dockerbuild = "docker build -t " + $tag + " --build-arg site_root=" + $siteroot + " ."
 Invoke-Expression $dockerbuild
+
+# Docker Push
+$dockerpush = "docker push " + $tag 
+Invoke-Expression $dockerpush
