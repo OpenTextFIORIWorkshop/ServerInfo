@@ -1,6 +1,6 @@
-# ServerInfo
+# server-info
 
-A simple Windows container that prints the ServerInfo.
+A simple Windows container that prints the `ServerInfo.GetHtml()`.
 
 ## Usage
 
